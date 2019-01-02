@@ -11,9 +11,8 @@ if __name__ == '__main__':
     content = ''
     file = ''
     if (len(sys.argv) < 2):
-        exit('请输入SQL文件路径')
-
-    dir = sys.argv[1]
+        raw_input('请输入SQL文件路径/r')
+        dir = sys.argv[1]
     try:
         file = open(dir)
     except IOError, e:
